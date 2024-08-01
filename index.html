@@ -1,12 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="container my-4">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendabono Sinthumule - CV</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        /* Custom Colors */
+        .text-dark-green {
+            color: #004d00;
+        }
+        .bg-dark-green {
+            background-color: #004d00;
+        }
+        .card-header-bg {
+            background-color: #004d00; /* Professional green */
+            color: white;
+        }
+
+        /* Card Styling */
+        .card-header {
+            background-color: darkgreen; /* Professional green */
+            color: white;
+        }
+        .card-body {
+            padding: 1.25rem;
+            transition: background-color 0.3s ease; /* Smooth background transition */
+        }
+
+        /* Icons */
+        .icon-large {
+            font-size: 1.5rem;
+        }
+
+        /* Hover Effects */
+        .text-hover:hover {
+            color: darkgreen;
+        }
+        .card:hover {
+            transform: translateY(-10px); /* Lift the card on hover */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
+        }
+
+        /* Animation for Sections */
+        .section {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeIn 1s ease-in-out; /* Fade in animation for sections */
+        }
+        .section:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Skill Rating */
+        .skill-rating {
+            display: flex;
+            align-items: center;
+        }
+        .skill-rating i {
+            color: darkgreen; /* Color for filled stars */
+            margin-right: 5px;
+        }
+        .skill-rating .fa-star {
+            color: darkgreen;
+        }
+        .skill-rating .fa-star-o {
+            color: lightgray;
+        }
+
+        /* Adjust font sizes */
+        .card-header h2, .card-body p, .card-body h5, .card-body h6 {
+            font-size: 0.875rem;
+        }
+        .card-body p {
+            font-size: 0.75rem;
+        }
+
+        /* Smaller Font Size */
+        .small-text {
+            font-size: 0.875rem; /* One unit smaller than the base size of 1rem */
+        }
+
+        /* Multilingual Proficiency List */
+        .multilingual-list li {
+            font-size: 0.75rem; /* Make the font size one unit smaller */
+        }
+        .programming-list li{
+            font-size: 0.75rem;
+        }
+        .web-list li{
+            font-size: 0.75rem;
+        }
+        .software-list li{
+            font-size: 0.75rem;
+        }
+
+        /* Soft Skills Icon */
+        .soft-skills-icon {
+            color: darkgreen; /* Same color as skill bar */
+            font-size: 1.2rem;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container my-4">
     <div class="row">
         <!-- Left Column -->
         <div class="col-md-4">
@@ -70,6 +181,8 @@
                 </div>
             </div>
         </div>
+        <!-- End Left Column -->
+       
         <!-- Right Column -->
         <div class="col-md-8">
             <div class="card bg-white text-secondary mb-4 section">
@@ -84,6 +197,7 @@
                     </p>
                 </div>
             </div>
+
 
             <div class="card bg-white text-secondary mb-4 section">
                 <div class="card-header">
@@ -203,7 +317,8 @@
                     </ul>
                 </div>
             </div>
-              <div class="card bg-white text-secondary mb-4 section">
+
+            <div class="card bg-white text-secondary mb-4 section">
                 <div class="card-header">
                     <h2 class="text-white">
                         <i class="fa fa-certificate me-2"></i>Education
@@ -239,5 +354,9 @@
     <p>Powered by Tendabono Sinthumule</p>
 </footer>
 
-  </body>
+<!-- Bootstrap and Font Awesome Scripts -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
 </html>
